@@ -277,11 +277,11 @@ function applyLanguage(lang) {
     }
   });
 
-  // Update map iframe language parameter
+  // Update map iframe language parameter using official place ID embed
   const mapIframe = document.getElementById('googleMapIframe');
   if (mapIframe) {
     const hlParam = lang === 'te' ? 'te' : 'en';
-    mapIframe.src = `https://maps.google.com/maps?q=14.5886509,79.5104577&hl=${hlParam}&z=14&output=embed`;
+    mapIframe.src = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15443.208107936163!2d79.4950000!3d14.5886500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb36a94fbba21ad%3A0x5a549d4be2a9bca5!2sRevuru%2C%20Andhra%20Pradesh%20524303!5e0!3m2!1s${hlParam}!2sin!4v1710000000000!5m2!1s${hlParam}!2sin`;
   }
 }
 
