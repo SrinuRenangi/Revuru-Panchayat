@@ -869,6 +869,19 @@ body {
 }
 
 /* RESPONSIVE */
+html[lang="en"] .hero-title-main,
+html[lang="en"] .hero-title-sub,
+html[lang="en"] .brand-title,
+html[lang="en"] .heading-title,
+html[lang="en"] .motto-te,
+html[lang="en"] .srv-title,
+html[lang="en"] .contact-h2,
+html[lang="en"] .f-brand h4 {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
