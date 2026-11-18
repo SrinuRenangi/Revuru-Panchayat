@@ -15,10 +15,10 @@
   <!-- Ambient Golden Light Particles -->
   <canvas id="ambientCanvas"></canvas>
 
-  <!-- Single Unified Header Navigation -->
+  <!-- Clean Top Brand Header (No Navbar Links) -->
   <header class="main-header">
     <div class="container nav-container">
-      <a href="#hero" class="brand-identity">
+      <div class="brand-identity">
         <div class="brand-emblem-mini">
           <img src="assets/gifs/revuru_emblem_3d_new.gif" alt="Revuru Emblem" class="mini-emblem-img">
         </div>
@@ -26,14 +26,7 @@
           <span class="brand-title" data-i18n="panchayatName">రేవూరు గ్రామ పంచాయతీ</span>
           <span class="brand-sub" data-i18n="panchayatSub">అనంతసాగరం మండలం, ఎస్.పి.ఎస్.ఆర్ నెల్లూరు జిల్లా - 524303</span>
         </div>
-      </a>
-
-      <nav class="nav-links" id="navLinks">
-        <a href="#hero" class="nav-link active" data-i18n="navHome">హోమ్</a>
-        <a href="#about" class="nav-link" data-i18n="navAbout">చరిత్ర & భౌగోళికం</a>
-        <a href="#services" class="nav-link" data-i18n="navServices">గ్రామ సేవలు</a>
-        <a href="#contact" class="nav-link" data-i18n="navContact">సంప్రదించండి</a>
-      </nav>
+      </div>
 
       <div class="header-actions">
         <button id="langToggleBtn" class="lang-btn" aria-label="Switch Language">
@@ -42,15 +35,12 @@
         <a href="https://maps.app.goo.gl/mjc4bQgnaM8Eju3r5" target="_blank" rel="noopener noreferrer" class="btn btn-map-nav">
           <span>📍</span> <span data-i18n="btnMap">మ్యాప్స్</span>
         </a>
-        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Menu">
-          <span></span><span></span><span></span>
-        </button>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- HERO SECTION -->
+  <main class="single-page-content">
+    <!-- SECTION 1: HERO / MAIN INTRODUCTION -->
     <section class="hero-section" id="hero">
       <div class="hero-glow orb-gold"></div>
       <div class="hero-glow orb-green"></div>
@@ -78,10 +68,11 @@
           </p>
 
           <div class="hero-buttons">
-            <a href="#about" class="btn btn-primary-gold" data-i18n="btnExplore">గ్రామ వివరాలు చూడండి →</a>
-            <a href="#services" class="btn btn-glass-card" data-i18n="btnServices">సచివాలయ సేవలు</a>
-            <a href="https://maps.app.goo.gl/mjc4bQgnaM8Eju3r5" target="_blank" rel="noopener noreferrer" class="btn btn-map-outline">
-              📍 <span data-i18n="btnLocation">గూగుల్ మ్యాప్స్</span>
+            <a href="https://maps.app.goo.gl/mjc4bQgnaM8Eju3r5" target="_blank" rel="noopener noreferrer" class="btn btn-primary-gold">
+              📍 <span data-i18n="btnLocation">గూగుల్ మ్యాప్స్‌లో చూడండి ↗</span>
+            </a>
+            <a href="mailto:revurupanchayat@gmail.com" class="btn btn-glass-card">
+              ✉️ <span data-i18n="btnEmailOffice">ఈమెయిల్ సంప్రదింపులు</span>
             </a>
           </div>
 
@@ -115,7 +106,7 @@
       </div>
     </section>
 
-    <!-- SECTION: రేవూరు చరిత్ర & భౌగోళికం (HISTORY & GEOGRAPHY) -->
+    <!-- SECTION 2: రేవూరు చరిత్ర & భౌగోళికం (HISTORY & GEOGRAPHY) -->
     <section class="page-section" id="about">
       <div class="container">
         <div class="section-heading text-center">
@@ -212,7 +203,7 @@
       </div>
     </section>
 
-    <!-- SECTION: గ్రామ సేవలు (CITIZEN SERVICES) -->
+    <!-- SECTION 3: గ్రామ సేవలు (CITIZEN SERVICES) -->
     <section class="page-section bg-alt" id="services">
       <div class="container">
         <div class="section-heading text-center">
@@ -257,7 +248,7 @@
       </div>
     </section>
 
-    <!-- SECTION: సంప్రదించండి (CONTACT) -->
+    <!-- SECTION 4: సంప్రదించండి & కార్యాలయ చిరునామా (CONTACT & OFFICE) -->
     <section class="page-section" id="contact">
       <div class="container">
         <div class="contact-card-unified">
@@ -314,7 +305,7 @@
     </section>
   </main>
 
-  <!-- Clean Unified Single Footer -->
+  <!-- Clean Minimal Footer -->
   <footer class="site-footer">
     <div class="container footer-flex">
       <div class="f-brand">
@@ -322,16 +313,12 @@
         <div>
           <h4 data-i18n="panchayatName">రేవూరు గ్రామ పంచాయతీ</h4>
           <p data-i18n="footerAddress">రేవూరు, అనంతసాగరం మండలం, ఎస్.పి.ఎస్.ఆర్ నెల్లూరు జిల్లా, ఆంధ్రప్రదేశ్ - 524303</p>
-          <small><span data-i18n="footerEmailLabel">ఈమెయిల్:</span> <a href="mailto:revurupanchayat@gmail.com" style="color:var(--gold-glow); text-decoration:none;">revurupanchayat@gmail.com</a></small>
+          <small><span data-i18n="footerEmailLabel">ఈమెయిల్:</span> <a href="mailto:revurupanchayat@gmail.com" class="f-mail">revurupanchayat@gmail.com</a></small>
         </div>
       </div>
 
-      <div class="f-links">
-        <a href="#hero" data-i18n="navHome">హోమ్</a>
-        <a href="#about" data-i18n="navAbout">చరిత్ర & భౌగోళికం</a>
-        <a href="#services" data-i18n="navServices">గ్రామ సేవలు</a>
-        <a href="#contact" data-i18n="navContact">సంప్రదించండి</a>
-        <a href="https://maps.app.goo.gl/mjc4bQgnaM8Eju3r5" target="_blank" rel="noopener noreferrer" data-i18n="footerMap">గూగుల్ మ్యాప్స్ ↗</a>
+      <div class="f-action">
+        <a href="https://maps.app.goo.gl/mjc4bQgnaM8Eju3r5" target="_blank" rel="noopener noreferrer" class="btn btn-map-nav" data-i18n="footerMap">గూగుల్ మ్యాప్స్ ↗</a>
       </div>
     </div>
     <div class="footer-copy text-center">

@@ -19,6 +19,7 @@ const I18N = {
     btnExplore: "గ్రామ వివరాలు చూడండి →",
     btnServices: "సచివాలయ సేవలు",
     btnLocation: "గూగుల్ మ్యాప్స్",
+    btnEmailOffice: "ఈమెయిల్ సంప్రదింపులు",
     statPin: "పోస్టల్ పిన్‌కోడ్",
     statCoords: "79.51° E అక్షాంశం",
     statWater: "రక్షిత మంచినీరు",
@@ -89,6 +90,7 @@ const I18N = {
     btnExplore: "Explore Village Details →",
     btnServices: "Secretariat Services",
     btnLocation: "Google Maps",
+    btnEmailOffice: "Email Office",
     statPin: "Postal PIN Code",
     statCoords: "79.51° E Longitude",
     statWater: "Pure Tap Water",
@@ -149,7 +151,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initAmbientCanvas();
   init3DEmblemStage();
   initLanguageToggle();
-  initMobileMenu();
 
   // Load and apply saved language preference
   const savedLang = localStorage.getItem('revuru_user_lang') || 'te';
@@ -300,33 +301,4 @@ function initLanguageToggle() {
     const nextLang = currentLang === 'te' ? 'en' : 'te';
     applyLanguage(nextLang);
   });
-}
-
-// Mobile Menu
-function initMobileMenu() {
-  const menuBtn = document.getElementById('mobileMenuBtn');
-  const navLinks = document.getElementById('navLinks');
-
-  if (menuBtn && navLinks) {
-    menuBtn.addEventListener('click', () => {
-      const isOpen = navLinks.style.display === 'flex';
-      navLinks.style.display = isOpen ? 'none' : 'flex';
-      navLinks.style.flexDirection = 'column';
-      navLinks.style.position = 'absolute';
-      navLinks.style.top = '74px';
-      navLinks.style.left = '0';
-      navLinks.style.width = '100%';
-      navLinks.style.background = 'rgba(6, 17, 5, 0.96)';
-      navLinks.style.padding = '1.5rem';
-      navLinks.style.borderBottom = '1px solid var(--border-gold)';
-    });
-
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) {
-          navLinks.style.display = 'none';
-        }
-      });
-    });
-  }
 }
