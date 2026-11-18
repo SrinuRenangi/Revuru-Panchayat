@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>రేవూరు గ్రామ పంచాయతీ | Revuru Grama Panchayat - Official Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gautami&family=Outfit:wght@300;400;500;600;700;800;900&family=Ramabhadra&family=Suranna&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/images/01_emblem_master.png">
+</head>
+<body>
+
+  <!-- Ambient Golden Particle Canvas -->
+  <canvas id="ambientCanvas"></canvas>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Official announcements">
+    <div class="container announcement-inner">
+      <div class="announcement-badge">
+        <span class="pulse-dot"></span> <span data-i18n="liveUpdates">ప్రత్యక్ష ప్రకటనలు</span>
+      </div>
+      <div class="ticker-content">
+        <p id="tickerText">
+          🌾 రేవూరు గ్రామ పంచాయతీ డిజిటల్ పోర్టల్ ప్రారంభం • మన ప్రగతే మనభవిష్యత్తు • రైతు భరోసా, తాగునీరు, పన్ను చెల్లింపు సేవలు ఇప్పుడు ఆన్‌లైన్‌లో అందుబాటులో ఉన్నాయి!
+        </p>
+      </div>
+      <div class="lang-switch-wrapper">
+        <button id="langToggleBtn" class="lang-btn" aria-label="Switch Language">
+          <span class="active-lang">తెలుగు</span> / <span>English</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="main-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-identity">
+        <div class="brand-emblem-mini">
+          <img src="assets/gifs/01_emblem_master_3d.gif" alt="Revuru Panchayat 3D Emblem" class="mini-emblem-img">
+        </div>
+        <div class="brand-text">
+          <span class="brand-telugu" data-i18n="panchayatName">రేవూరు గ్రామ పంచాయతీ</span>
+          <span class="brand-sub" data-i18n="panchayatSub">Revuru Grama Panchayat • Andhra Pradesh</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active" data-i18n="navHome">ప్రధాన పేజీ</a>
+        <a href="#features" class="nav-link" data-i18n="navServices">గ్రామ సేవలు</a>
+        <a href="#assets-showcase" class="nav-link" data-i18n="navAssets">3D చిహ్నాలు & గ్యాలరీ</a>
+        <a href="#color-tokens" class="nav-link" data-i18n="navColors">రంగుల కోడ్‌లు</a>
+        <a href="#about" class="nav-link" data-i18n="navAbout">రేవూరు చరిత్ర</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#assets-showcase" class="btn btn-secondary-glow">
+          <span class="icon">✨</span> <span data-i18n="btnAssets4k">4K & 3D GIFs</span>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HOME HERO SECTION -->
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="hero-background-effects">
+        <div class="glow-orb orb-gold"></div>
+        <div class="glow-orb orb-green"></div>
+        <div class="glow-orb orb-sky"></div>
+        <div class="sunburst-ambient"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <!-- Hero Text & Call-to-Actions -->
+        <div class="hero-text-col">
+          <div class="hero-badge">
+            <span class="badge-icon">🏛️</span>
+            <span class="badge-text" data-i18n="heroBadge">స్వర్ణ గ్రామ పంచాయతీ రేవూరు</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-primary" data-i18n="heroTitleRevuru">రేవూరు</span>
+            <span class="title-secondary" data-i18n="heroTitlePanchayat">గ్రామ పంచాయతీ</span>
+          </h1>
+
+          <div class="motto-ribbon-card">
+            <div class="ribbon-glow-line"></div>
+            <p class="motto-telugu" data-i18n="mottoText">మన ప్రగతే మనభవిష్యత్తు</p>
+            <p class="motto-sub" data-i18n="mottoSub">Our Progress is Our Shared Future</p>
+          </div>
+
+          <p class="hero-lead" data-i18n="heroLead">
+            పచ్చని పొలాలు, చారిత్రక ఆధ్యాత్మిక శోభ, నిరంతర అభివృద్ధి, ఆధునిక డిజిటల్ పరిపాలనతో సుసంపన్నమైన రేవూరు గ్రామ అధికారిక వెబ్ పోర్టల్. 3D గ్రాఫిక్స్, అల్ట్రా 4K దృశ్యాలు మరియు సమగ్ర పౌర సేవల సమాహారం.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#assets-showcase" class="btn btn-primary-3d">
+              <span class="btn-text" data-i18n="btnExploreAssets">3D ఎలిమెంట్స్ పరిశీలించండి</span>
+              <span class="btn-arrow">→</span>
+            </a>
+            <a href="#features" class="btn btn-glass">
+              <span class="btn-icon">📋</span>
+              <span class="btn-text" data-i18n="btnCitizenServices">పౌర సేవల పోర్టల్</span>
+            </a>
+          </div>
+
+          <!-- Quick Metrics Ribbon -->
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <span class="metric-num">100%</span>
+              <span class="metric-label" data-i18n="metricWater">రక్షిత మంచినీరు</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <span class="metric-num">1,200+</span>
+              <span class="metric-label" data-i18n="metricAgri">ఎకరాల పచ్చని పంటలు</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <span class="metric-num">24/7</span>
+              <span class="metric-label" data-i18n="metricDigital">డిజిటల్ సేవలు</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Interactive Emblem Stage -->
+        <div class="hero-stage-col">
+          <div class="emblem-card-3d" id="emblem3DStage">
+            <!-- Floating Depth Layers for Parallax Effect -->
+            <div class="emblem-halo"></div>
+            
+            <div class="emblem-frame-wrapper" id="emblemWrapper">
+              <img src="assets/gifs/01_emblem_master_3d.gif" alt="Revuru Emblem 3D Responsive Animation" class="emblem-master-asset" id="mainHeroAsset">
+              
+              <!-- Shimmer light overlay -->
+              <div class="light-sheen"></div>
+            </div>
+
+            <!-- Stage Control Floating Bar -->
+            <div class="stage-controls">
+              <button class="stage-btn active" id="btnModeMaster" data-mode="master">
+                🌟 <span data-i18n="ctrlMaster">3D మాస్టర్ చిహ్నం</span>
+              </button>
+              <button class="stage-btn" id="btnModeGleam" data-mode="gleam">
+                ✨ <span data-i18n="ctrlGlint">గోల్డ్ గ్లింట్ ఎఫెక్ట్</span>
+              </button>
+              <a href="assets/images/4k_01_emblem_master.png" download="Revuru_Emblem_4K.png" class="stage-btn download-pill">
+                ⬇️ <span data-i18n="ctrlDownload4k">4K PNG డౌన్‌లోడ్</span>
+              </a>
+            </div>
+
+            <div class="stage-hint">
+              <span class="mouse-icon">🖱️</span>
+              <span data-i18n="stageHint">3D కోణాన్ని చూడడానికి కర్సర్‌ని లేదా టచ్‌ని కదిలించండి</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CITIZEN QUICK SERVICES -->
+    <section class="services-section" id="features">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag" data-i18n="tagServices">పౌర కేంద్రక పరిపాలన</span>
+          <h2 class="section-title" data-i18n="servicesTitle">రేవూరు గ్రామ పంచాయతీ సేవలు</h2>
+          <p class="section-desc" data-i18n="servicesDesc">గ్రామ ప్రజల సౌకర్యార్థం సచివాలయ సేవలు, వ్యవసాయ తోడ్పాటు మరియు సర్టిఫికెట్ల వివరాలు</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon-wrap" style="--accent-color: #eed414;">
+              <img src="assets/gifs/03_red_tractor_3d.gif" alt="Agriculture service icon" class="service-icon-gif">
+            </div>
+            <h3 class="service-name" data-i18n="srvAgri">రైతు భరోసా & వ్యవసాయం</h3>
+            <p class="service-detail" data-i18n="srvAgriDesc">విత్తనాలు, ఎరువుల పంపిణీ, ఆధునిక యంత్రాల రాయితీలు మరియు పంట సాగు మార్గదర్శకాలు.</p>
+            <a href="#features" class="service-link"><span data-i18n="learnMore">వివరాలు చూడండి</span> →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon-wrap" style="--accent-color: #0e99f8;">
+              <img src="assets/gifs/05_water_tower_3d.gif" alt="Drinking water service icon" class="service-icon-gif">
+            </div>
+            <h3 class="service-name" data-i18n="srvWater">రక్షిత మంచినీటి సరఫరా</h3>
+            <p class="service-detail" data-i18n="srvWaterDesc">అతి పెద్ద రేవూరు ఓవర్‌హెడ్ ట్యాంక్ ద్వారా ప్రతి ఇంటికీ ఉచిత పరిశుభ్రమైన తాగునీటి సరఫరా.</p>
+            <a href="#features" class="service-link"><span data-i18n="learnMore">వివరాలు చూడండి</span> →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon-wrap" style="--accent-color: #347a15;">
+              <img src="assets/gifs/02_banyan_tree_3d.gif" alt="Clean and Green Revuru icon" class="service-icon-gif">
+            </div>
+            <h3 class="service-name" data-i18n="srvGreen">పరిశుభ్రత & పర్యావరణం</h3>
+            <p class="service-detail" data-i18n="srvGreenDesc">స్వచ్ఛ రేవూరు ఉద్యమం, పచ్చని చెట్ల పెంపకం, మురుగునీటి నిర్వహణ మరియు పర్యావరణ పరిరక్షణ.</p>
+            <a href="#features" class="service-link"><span data-i18n="learnMore">వివరాలు చూడండి</span> →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon-wrap" style="--accent-color: #c3842e;">
+              <img src="assets/gifs/04_temple_gopuram_3d.gif" alt="Temple and Heritage icon" class="service-icon-gif">
+            </div>
+            <h3 class="service-name" data-i18n="srvCulture">చారిత్రక సంస్కృతి & ఉత్సవాలు</h3>
+            <p class="service-detail" data-i18n="srvCultureDesc">పురాతన దేవాలయ సంరక్షణ, గ్రామ తిరునాళ్ళు, సాంస్కృతిక వేడుకలు మరియు సామరస్య వేదిక.</p>
+            <a href="#features" class="service-link"><span data-i18n="learnMore">వివరాలు చూడండి</span> →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3D ASSETS & PARTITION SHOWCASE -->
+    <section class="assets-section" id="assets-showcase">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag" data-i18n="tagAssets">డిజిటల్ చిహ్నాల విభజన</span>
+          <h2 class="section-title" data-i18n="assetsTitle">రేవూరు లోగో సమగ్ర 3D ఎలిమెంట్స్ & 4K ఆస్తులు</h2>
+          <p class="section-desc" data-i18n="assetsDesc">
+            మూల చిహ్నంలోని ప్రతి భాగాన్ని విడదీసి, సహజమైన అంచులు, అల్ట్రా-హై-డెఫినిషన్ 4K నాణ్యత మరియు స్పందించే 3D యానిమేషన్ GIFలుగా రూపొందించబడిన ప్రతిష్ఠాత్మక సేకరణ.
+          </p>
+          
+          <!-- Category Filter Bar -->
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all" data-i18n="tabAll">అన్నీ (14 అంశాలు)</button>
+            <button class="filter-btn" data-filter="symbol" data-i18n="tabSymbols">ప్రధాన చిహ్నాలు</button>
+            <button class="filter-btn" data-filter="nature" data-i18n="tabNature">ప్రకృతి & వ్యవసాయం</button>
+            <button class="filter-btn" data-filter="typography" data-i18n="tabType">3D అక్షరాలు & నినాదం</button>
+          </div>
+        </div>
+
+        <div class="assets-grid" id="assetsGrid">
+          <!-- Dynamically populated via script.js from color_palette.json -->
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFICIAL COLOR PALETTE & DESIGN SYSTEM -->
+    <section class="color-tokens-section" id="color-tokens">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag" data-i18n="tagColors">అధికారిక రంగుల కోడ్‌లు</span>
+          <h2 class="section-title" data-i18n="colorsTitle">రేవూరు పంచాయతీ కలర్ పాలెట్ & డిజైన్ టోకెన్లు</h2>
+          <p class="section-desc" data-i18n="colorsDesc">
+            లోగో నుండి గణితశాస్త్ర రీత్యా విశ్లేషించి వర్గీకరించబడిన అసలైన హెక్స్ (HEX), RGB కోడ్‌లు మరియు వాటి ప్రాముఖ్యత.
+          </p>
+        </div>
+
+        <div class="color-cards-container">
+          <!-- Gold -->
+          <div class="color-token-card">
+            <div class="color-swatch-box" style="background: linear-gradient(135deg, #eed414, #f4e15d);">
+              <span class="swatch-tag">గోల్డ్ రాయల్టీ</span>
+            </div>
+            <div class="color-meta">
+              <h4>రేవూరు స్వర్ణ కాంతి (Radiant Gold)</h4>
+              <p class="color-role">3D టైటిల్, గోల్డెన్ రింగ్, సూర్య కిరణాలు, వరికంకులు</p>
+              <div class="code-badges">
+                <button class="copy-badge" data-copy="#eed414">HEX: #eed414 📋</button>
+                <button class="copy-badge" data-copy="rgb(238, 212, 20)">RGB: 238, 212, 20 📋</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Agriculture Green -->
+          <div class="color-token-card">
+            <div class="color-swatch-box" style="background: linear-gradient(135deg, #14320b, #347a15);">
+              <span class="swatch-tag">పంట సిరి</span>
+            </div>
+            <div class="color-meta">
+              <h4>హరిత శోభ (Agrarian Emerald)</h4>
+              <p class="color-role">పచ్చని వరి చేలు, మహావృక్షం పత్రాలు, జీవ సమతుల్యత</p>
+              <div class="code-badges">
+                <button class="copy-badge" data-copy="#347a15">HEX: #347a15 📋</button>
+                <button class="copy-badge" data-copy="rgb(52, 122, 21)">RGB: 52, 122, 21 📋</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lime / Solar Green -->
+          <div class="color-token-card">
+            <div class="color-swatch-box" style="background: linear-gradient(135deg, #81b817, #babc33);">
+              <span class="swatch-tag">ఉదయ కాంతి</span>
+            </div>
+            <div class="color-meta">
+              <h4>సూర్యకాంతి పచ్చదనం (Sunlit Foliage)</h4>
+              <p class="color-role">మొలకెత్తుతున్న పైరు, పచ్చిక మైదానాలు, నవోదయం</p>
+              <div class="code-badges">
+                <button class="copy-badge" data-copy="#81b817">HEX: #81b817 📋</button>
+                <button class="copy-badge" data-copy="rgb(129, 184, 23)">RGB: 129, 184, 23 📋</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Terracotta / Gopuram Ochre -->
+          <div class="color-token-card">
+            <div class="color-swatch-box" style="background: linear-gradient(135deg, #c3842e, #79481f);">
+              <span class="swatch-tag">సంస్కృతి శిల</span>
+            </div>
+            <div class="color-meta">
+              <h4>గోపుర మట్టిరంగు (Heritage Terracotta)</h4>
+              <p class="color-role">పురాతన ఆలయ శిలలు, ఇళ్ళ పెంకులు, రహదారి అంచులు</p>
+              <div class="code-badges">
+                <button class="copy-badge" data-copy="#c3842e">HEX: #c3842e 📋</button>
+                <button class="copy-badge" data-copy="rgb(195, 132, 46)">RGB: 195, 132, 46 📋</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sky Azure -->
+          <div class="color-token-card">
+            <div class="color-swatch-box" style="background: linear-gradient(135deg, #0e99f8, #7ecaf3);">
+              <span class="swatch-tag">ఆకాశ నీలిమ</span>
+            </div>
+            <div class="color-meta">
+              <h4>గ్రామీణ నీలాకాశం (Azure Horizon)</h4>
+              <p class="color-role">స్వచ్ఛమైన గగనం, స్వచ్ఛ జలం, విహంగాల విహార నేపథ్యం</p>
+              <div class="code-badges">
+                <button class="copy-badge" data-copy="#0e99f8">HEX: #0e99f8 📋</button>
+                <button class="copy-badge" data-copy="rgb(14, 153, 248)">RGB: 14, 153, 248 📋</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pure Civic White -->
+          <div class="color-token-card">
+            <div class="color-swatch-box" style="background: linear-gradient(135deg, #ffffff, #e7f0eb); border: 1px solid rgba(255,255,255,0.3);">
+              <span class="swatch-tag" style="color:#222;">నిష్కళంక శ్వేతం</span>
+            </div>
+            <div class="color-meta">
+              <h4>పంచాయతీ శ్వేత వర్ణం (Civic Silver White)</h4>
+              <p class="color-role">3D "పంచాయత్" అక్షరమాల, వాటర్ ట్యాంక్ గోడలు, పౌర ఇళ్ళు</p>
+              <div class="code-badges">
+                <button class="copy-badge" data-copy="#e7f0eb">HEX: #e7f0eb 📋</button>
+                <button class="copy-badge" data-copy="rgb(231, 240, 235)">RGB: 231, 240, 235 📋</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT REVURU VILLAGE & HERITAGE -->
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-text-content">
+          <span class="section-tag" data-i18n="tagAbout">గ్రామ పరిచయం</span>
+          <h2 class="section-title" data-i18n="aboutTitle">రేవూరు: సాంప్రదాయం మరియు ఆధునికతల సంగమం</h2>
+          <p class="about-p" data-i18n="aboutP1">
+            రేవూరు గ్రామం సారవంతమైన నేలలు, ఆదర్శవంతమైన వ్యవసాయ సంస్కృతి, పురాతన ఆలయ గోపురం మరియు శాంతియుత ప్రజా జీవనానికి ప్రసిద్ధి చెందిన పుణ్యభూమి.
+          </p>
+          <p class="about-p" data-i18n="aboutP2">
+            పంచాయతీ లోగోలో కొలువైన ప్రతి చిహ్నం రేవూరు గ్రామీణ ఆత్మను ప్రతిబింబిస్తుంది. ఉదయిస్తున్న సూర్యుడు ప్రతి ఉదయం తెచ్చే నవ వికాసాన్ని సూచిస్తే, ట్రాక్టర్ మరియు వరికంకులు అన్నదాత శ్రమను, గోపురం మన సంస్కృతిని, వాటర్ ట్యాంక్ ప్రజా సంక్షేమాన్ని నిరూపిస్తాయి.
+          </p>
+          <div class="about-highlights">
+            <div class="hl-item">
+              <span class="hl-icon">🌱</span>
+              <div>
+                <h4 data-i18n="hl1Title">సారవంతమైన భూములు</h4>
+                <p data-i18n="hl1Desc">వరి, పండ్లు మరియు వాణిజ్య పంటల సమృద్ధి</p>
+              </div>
+            </div>
+            <div class="hl-item">
+              <span class="hl-icon">🏛️</span>
+              <div>
+                <h4 data-i18n="hl2Title">చారిత్రక వారసత్వం</h4>
+                <p data-i18n="hl2Desc">శతాబ్దాల నాటి ద్రావిడ ఆలయ శిల్పకళా వైభవం</p>
+              </div>
+            </div>
+            <div class="hl-item">
+              <span class="hl-icon">⚡</span>
+              <div>
+                <h4 data-i18n="hl3Title">డిజిటల్ పరిపాలన</h4>
+                <p data-i18n="hl3Desc">పారదర్శకమైన మరియు వేగవంతమైన ఆన్‌లైన్ సేవలు</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual">
+          <div class="visual-stack">
+            <img src="assets/images/4k_08_village_community.png" alt="Revuru Village Landscape" class="stack-img main-landscape">
+            <div class="glass-float-card">
+              <img src="assets/gifs/11_motto_ribbon_3d.gif" alt="Motto Ribbon" class="ribbon-mini">
+              <div class="float-meta">
+                <strong>గ్రామ నినాదం</strong>
+                <span>మన ప్రగతే మనభవిష్యత్తు</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="assets/gifs/01_emblem_master_3d.gif" alt="Revuru Emblem" class="footer-emblem">
+        <div>
+          <h3>రేవూరు గ్రామ పంచాయతీ</h3>
+          <p>Revuru Grama Panchayat • Andhra Pradesh, India</p>
+          <small>మన ప్రగతే మనభవిష్యత్తు — Our Progress is Our Future</small>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>శీఘ్ర లింకులు (Quick Links)</h4>
+        <ul>
+          <li><a href="#hero">హోమ్ పేజీ (Home)</a></li>
+          <li><a href="#assets-showcase">3D చిహ్నాలు & 4K డౌన్‌లోడ్స్</a></li>
+          <li><a href="#color-tokens">కలర్ పాలెట్ కోడ్‌లు</a></li>
+          <li><a href="#features">పౌర సేవల సమాచారం</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>సంప్రదించండి (Contact Info)</h4>
+        <p>📍 గ్రామ పంచాయతీ కార్యాలయం, రేవూరు గ్రామం</p>
+        <p>✉️ grampanchayat.revuru@ap.gov.in</p>
+        <p>📞 హెల్ప్‌లైన్: 1800-425-REVURU</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-flex">
+        <p>© 2026 రేవూరు గ్రామ పంచాయతీ. All Rights Reserved. Designed with Ultra 4K & Responsive 3D Visuals.</p>
+        <p>Official Digital Assets & Web Portal Repository</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for High-Definition Inspection -->
+  <div class="asset-modal" id="assetModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-window">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">✕</button>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification for Copy -->
+  <div class="toast-notification" id="toastNotice">
+    కోడ్ కాపీ చేయబడింది! (Copied to Clipboard)
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

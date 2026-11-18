@@ -1,0 +1,702 @@
+{
+  "01_emblem_master": {
+    "name": "Revuru Panchayat Master Emblem",
+    "palette": [
+      {
+        "rgb": [
+          135,
+          142,
+          50
+        ],
+        "hex": "#878e32",
+        "percentage": 29.7
+      },
+      {
+        "rgb": [
+          45,
+          84,
+          19
+        ],
+        "hex": "#2d5413",
+        "percentage": 23.3
+      },
+      {
+        "rgb": [
+          225,
+          199,
+          46
+        ],
+        "hex": "#e1c72e",
+        "percentage": 22.4
+      },
+      {
+        "rgb": [
+          198,
+          214,
+          210
+        ],
+        "hex": "#c6d6d2",
+        "percentage": 15.7
+      },
+      {
+        "rgb": [
+          38,
+          163,
+          242
+        ],
+        "hex": "#26a3f2",
+        "percentage": 8.9
+      }
+    ]
+  },
+  "02_banyan_tree": {
+    "name": "The Great Banyan Tree (మహావృక్షం)",
+    "palette": [
+      {
+        "rgb": [
+          97,
+          123,
+          43
+        ],
+        "hex": "#617b2b",
+        "percentage": 29.4
+      },
+      {
+        "rgb": [
+          38,
+          55,
+          19
+        ],
+        "hex": "#263713",
+        "percentage": 29.4
+      },
+      {
+        "rgb": [
+          186,
+          188,
+          51
+        ],
+        "hex": "#babc33",
+        "percentage": 19.9
+      },
+      {
+        "rgb": [
+          213,
+          227,
+          216
+        ],
+        "hex": "#d5e3d8",
+        "percentage": 12.3
+      },
+      {
+        "rgb": [
+          27,
+          168,
+          241
+        ],
+        "hex": "#1ba8f1",
+        "percentage": 8.9
+      }
+    ]
+  },
+  "03_red_tractor": {
+    "name": "Farmer & Red Tractor (వ్యవసాయం & ట్రాక్టర్)",
+    "palette": [
+      {
+        "rgb": [
+          32,
+          41,
+          28
+        ],
+        "hex": "#20291c",
+        "percentage": 32.6
+      },
+      {
+        "rgb": [
+          225,
+          239,
+          236
+        ],
+        "hex": "#e1efec",
+        "percentage": 23.7
+      },
+      {
+        "rgb": [
+          99,
+          143,
+          88
+        ],
+        "hex": "#638f58",
+        "percentage": 20.6
+      },
+      {
+        "rgb": [
+          204,
+          213,
+          44
+        ],
+        "hex": "#ccd52c",
+        "percentage": 12.3
+      },
+      {
+        "rgb": [
+          170,
+          58,
+          30
+        ],
+        "hex": "#aa3a1e",
+        "percentage": 10.8
+      }
+    ]
+  },
+  "04_temple_gopuram": {
+    "name": "Sacred Dravidian Temple Gopuram (దేవాలయ గోపురం)",
+    "palette": [
+      {
+        "rgb": [
+          249,
+          227,
+          53
+        ],
+        "hex": "#f9e335",
+        "percentage": 29.0
+      },
+      {
+        "rgb": [
+          241,
+          219,
+          176
+        ],
+        "hex": "#f1dbb0",
+        "percentage": 24.6
+      },
+      {
+        "rgb": [
+          149,
+          101,
+          48
+        ],
+        "hex": "#956530",
+        "percentage": 17.9
+      },
+      {
+        "rgb": [
+          205,
+          153,
+          103
+        ],
+        "hex": "#cd9967",
+        "percentage": 17.1
+      },
+      {
+        "rgb": [
+          60,
+          54,
+          13
+        ],
+        "hex": "#3c360d",
+        "percentage": 11.4
+      }
+    ]
+  },
+  "05_water_tower": {
+    "name": "Revuru Elevated Water Reservoir (రక్షిత మంచినీటి ట్యాంక్)",
+    "palette": [
+      {
+        "rgb": [
+          235,
+          229,
+          220
+        ],
+        "hex": "#ebe5dc",
+        "percentage": 40.4
+      },
+      {
+        "rgb": [
+          153,
+          111,
+          50
+        ],
+        "hex": "#996f32",
+        "percentage": 19.3
+      },
+      {
+        "rgb": [
+          203,
+          167,
+          115
+        ],
+        "hex": "#cba773",
+        "percentage": 16.8
+      },
+      {
+        "rgb": [
+          40,
+          64,
+          19
+        ],
+        "hex": "#284013",
+        "percentage": 16.1
+      },
+      {
+        "rgb": [
+          128,
+          203,
+          249
+        ],
+        "hex": "#80cbf9",
+        "percentage": 7.4
+      }
+    ]
+  },
+  "06_sun_and_rays": {
+    "name": "Golden Sunrise & Solar Rays (ఉదయ భానుడు)",
+    "palette": [
+      {
+        "rgb": [
+          249,
+          235,
+          50
+        ],
+        "hex": "#f9eb32",
+        "percentage": 26.6
+      },
+      {
+        "rgb": [
+          238,
+          181,
+          17
+        ],
+        "hex": "#eeb511",
+        "percentage": 22.9
+      },
+      {
+        "rgb": [
+          251,
+          248,
+          165
+        ],
+        "hex": "#fbf8a5",
+        "percentage": 19.8
+      },
+      {
+        "rgb": [
+          53,
+          69,
+          10
+        ],
+        "hex": "#35450a",
+        "percentage": 15.9
+      },
+      {
+        "rgb": [
+          141,
+          138,
+          28
+        ],
+        "hex": "#8d8a1c",
+        "percentage": 14.8
+      }
+    ]
+  },
+  "07_flying_birds": {
+    "name": "Flock of Flying Birds (విహంగాల సమూహం)",
+    "palette": [
+      {
+        "rgb": [
+          125,
+          192,
+          244
+        ],
+        "hex": "#7dc0f4",
+        "percentage": 36.1
+      },
+      {
+        "rgb": [
+          23,
+          159,
+          249
+        ],
+        "hex": "#179ff9",
+        "percentage": 26.4
+      },
+      {
+        "rgb": [
+          205,
+          215,
+          220
+        ],
+        "hex": "#cdd7dc",
+        "percentage": 18.6
+      },
+      {
+        "rgb": [
+          241,
+          190,
+          78
+        ],
+        "hex": "#f1be4e",
+        "percentage": 12.7
+      },
+      {
+        "rgb": [
+          93,
+          64,
+          45
+        ],
+        "hex": "#5d402d",
+        "percentage": 6.3
+      }
+    ]
+  },
+  "08_village_community": {
+    "name": "Village Cottages & Highway (గ్రామ ఆవాసాలు & రహదారి)",
+    "palette": [
+      {
+        "rgb": [
+          111,
+          129,
+          35
+        ],
+        "hex": "#6f8123",
+        "percentage": 24.4
+      },
+      {
+        "rgb": [
+          196,
+          141,
+          94
+        ],
+        "hex": "#c48d5e",
+        "percentage": 23.0
+      },
+      {
+        "rgb": [
+          38,
+          64,
+          13
+        ],
+        "hex": "#26400d",
+        "percentage": 19.3
+      },
+      {
+        "rgb": [
+          194,
+          223,
+          19
+        ],
+        "hex": "#c2df13",
+        "percentage": 16.8
+      },
+      {
+        "rgb": [
+          232,
+          220,
+          191
+        ],
+        "hex": "#e8dcbf",
+        "percentage": 16.4
+      }
+    ]
+  },
+  "09_revuru_title_3d": {
+    "name": "3D Golden Title \"రేవూరు\" (Revuru Inscription)",
+    "palette": [
+      {
+        "rgb": [
+          239,
+          216,
+          17
+        ],
+        "hex": "#efd811",
+        "percentage": 34.2
+      },
+      {
+        "rgb": [
+          137,
+          133,
+          40
+        ],
+        "hex": "#898528",
+        "percentage": 21.6
+      },
+      {
+        "rgb": [
+          20,
+          28,
+          6
+        ],
+        "hex": "#141c06",
+        "percentage": 18.1
+      },
+      {
+        "rgb": [
+          42,
+          103,
+          16
+        ],
+        "hex": "#2a6710",
+        "percentage": 15.4
+      },
+      {
+        "rgb": [
+          212,
+          199,
+          147
+        ],
+        "hex": "#d4c793",
+        "percentage": 10.7
+      }
+    ]
+  },
+  "10_panchayat_title_3d": {
+    "name": "3D Title \"పంచాయత్\" (Panchayat Inscription)",
+    "palette": [
+      {
+        "rgb": [
+          7,
+          57,
+          4
+        ],
+        "hex": "#073904",
+        "percentage": 44.9
+      },
+      {
+        "rgb": [
+          241,
+          240,
+          238
+        ],
+        "hex": "#f1f0ee",
+        "percentage": 19.0
+      },
+      {
+        "rgb": [
+          243,
+          182,
+          16
+        ],
+        "hex": "#f3b610",
+        "percentage": 16.6
+      },
+      {
+        "rgb": [
+          115,
+          86,
+          43
+        ],
+        "hex": "#73562b",
+        "percentage": 11.4
+      },
+      {
+        "rgb": [
+          169,
+          172,
+          154
+        ],
+        "hex": "#a9ac9a",
+        "percentage": 8.2
+      }
+    ]
+  },
+  "11_motto_ribbon": {
+    "name": "Motto Ribbon: \"మన ప్రగతే మనభవిష్యత్తు\"",
+    "palette": [
+      {
+        "rgb": [
+          240,
+          211,
+          71
+        ],
+        "hex": "#f0d347",
+        "percentage": 31.5
+      },
+      {
+        "rgb": [
+          159,
+          111,
+          46
+        ],
+        "hex": "#9f6f2e",
+        "percentage": 25.4
+      },
+      {
+        "rgb": [
+          40,
+          60,
+          14
+        ],
+        "hex": "#283c0e",
+        "percentage": 21.1
+      },
+      {
+        "rgb": [
+          221,
+          234,
+          229
+        ],
+        "hex": "#ddeae5",
+        "percentage": 14.4
+      },
+      {
+        "rgb": [
+          94,
+          184,
+          212
+        ],
+        "hex": "#5eb8d4",
+        "percentage": 7.7
+      }
+    ]
+  },
+  "12_golden_wheat_left": {
+    "name": "Left Golden Paddy Sheaf (ఎడమ బంగారు వరికంకి)",
+    "palette": [
+      {
+        "rgb": [
+          234,
+          206,
+          42
+        ],
+        "hex": "#eace2a",
+        "percentage": 28.7
+      },
+      {
+        "rgb": [
+          28,
+          55,
+          15
+        ],
+        "hex": "#1c370f",
+        "percentage": 22.9
+      },
+      {
+        "rgb": [
+          46,
+          140,
+          23
+        ],
+        "hex": "#2e8c17",
+        "percentage": 21.1
+      },
+      {
+        "rgb": [
+          156,
+          128,
+          37
+        ],
+        "hex": "#9c8025",
+        "percentage": 19.3
+      },
+      {
+        "rgb": [
+          100,
+          204,
+          220
+        ],
+        "hex": "#64ccdc",
+        "percentage": 8.0
+      }
+    ]
+  },
+  "13_golden_wheat_right": {
+    "name": "Right Golden Paddy Sheaf (కుడి బంగారు వరికంకి)",
+    "palette": [
+      {
+        "rgb": [
+          20,
+          76,
+          9
+        ],
+        "hex": "#144c09",
+        "percentage": 32.9
+      },
+      {
+        "rgb": [
+          225,
+          197,
+          31
+        ],
+        "hex": "#e1c51f",
+        "percentage": 29.5
+      },
+      {
+        "rgb": [
+          113,
+          135,
+          35
+        ],
+        "hex": "#718723",
+        "percentage": 23.9
+      },
+      {
+        "rgb": [
+          227,
+          217,
+          171
+        ],
+        "hex": "#e3d9ab",
+        "percentage": 8.7
+      },
+      {
+        "rgb": [
+          45,
+          196,
+          239
+        ],
+        "hex": "#2dc4ef",
+        "percentage": 5.1
+      }
+    ]
+  },
+  "14_lower_fields_arc": {
+    "name": "Contoured Emerald Terraces (హరిత క్షేత్రాలు)",
+    "palette": [
+      {
+        "rgb": [
+          41,
+          87,
+          17
+        ],
+        "hex": "#295711",
+        "percentage": 27.4
+      },
+      {
+        "rgb": [
+          128,
+          139,
+          33
+        ],
+        "hex": "#808b21",
+        "percentage": 24.6
+      },
+      {
+        "rgb": [
+          229,
+          219,
+          45
+        ],
+        "hex": "#e5db2d",
+        "percentage": 23.3
+      },
+      {
+        "rgb": [
+          228,
+          237,
+          226
+        ],
+        "hex": "#e4ede2",
+        "percentage": 14.7
+      },
+      {
+        "rgb": [
+          136,
+          167,
+          155
+        ],
+        "hex": "#88a79b",
+        "percentage": 10.0
+      }
+    ]
+  }
+}
