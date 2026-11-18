@@ -22,8 +22,8 @@ const I18N = {
     metricPincode: "పోస్టల్ పిన్‌కోడ్",
     metricCoords: "79.51° E అక్షాంశం",
     metricWater: "రక్షిత మంచినీరు",
-    ctrlMaster: "3D గ్రామ చిహ్నం",
-    ctrlGlint: "స్వర్ణ కాంతి గ్లింట్",
+    ctrlMaster: "3D యానిమేషన్",
+    ctrlPng: "అల్ట్రా HD PNG",
     stageHint: "3D కోణాన్ని చూడడానికి కర్సర్‌ని లేదా టచ్‌ని కదిలించండి",
     tagHistory: "భౌగోళికం & చారిత్రక వైభవం",
     historyTitle: "రేవూరు గ్రామ చరిత్ర & భౌగోళిక విశేషాలు",
@@ -78,8 +78,8 @@ const I18N = {
     metricPincode: "Postal PIN Code",
     metricCoords: "79.51° E Longitude",
     metricWater: "Pure Tap Water",
-    ctrlMaster: "3D Village Emblem",
-    ctrlGlint: "Golden Glint Effect",
+    ctrlMaster: "3D Animation",
+    ctrlPng: "Ultra HD PNG",
     stageHint: "Move cursor or touch screen to rotate in 3D perspective",
     tagHistory: "Geography & Cultural Heritage",
     historyTitle: "Revuru Village History & Geography",
@@ -188,7 +188,7 @@ function init3DEmblemStage() {
   const wrapper = document.getElementById('emblemWrapper');
   const heroAsset = document.getElementById('mainHeroAsset');
   const btnModeMaster = document.getElementById('btnModeMaster');
-  const btnModeGleam = document.getElementById('btnModeGleam');
+  const btnModePng = document.getElementById('btnModePng');
 
   let bounds = stage.getBoundingClientRect();
   window.addEventListener('resize', () => {
@@ -212,7 +212,6 @@ function init3DEmblemStage() {
     wrapper.style.transform = 'rotateX(0deg) rotateY(0deg) translateZ(0px)';
   });
 
-  // Touch tilt for mobile
   stage.addEventListener('touchmove', (e) => {
     if (e.touches.length > 0) {
       const touch = e.touches[0];
@@ -226,18 +225,18 @@ function init3DEmblemStage() {
     wrapper.style.transform = 'rotateX(0deg) rotateY(0deg) translateZ(0px)';
   });
 
-  // Stage Buttons
-  if (btnModeMaster && btnModeGleam) {
+  // Toggle between 3D GIF animation and Ultra HD Transparent PNG
+  if (btnModeMaster && btnModePng) {
     btnModeMaster.addEventListener('click', () => {
       btnModeMaster.classList.add('active');
-      btnModeGleam.classList.remove('active');
-      heroAsset.src = 'assets/gifs/01_emblem_master_3d.gif';
+      btnModePng.classList.remove('active');
+      heroAsset.src = 'assets/gifs/revuru_emblem_3d_new.gif';
     });
 
-    btnModeGleam.addEventListener('click', () => {
-      btnModeGleam.classList.add('active');
+    btnModePng.addEventListener('click', () => {
+      btnModePng.classList.add('active');
       btnModeMaster.classList.remove('active');
-      heroAsset.src = 'assets/gifs/emblem_3d_glow.gif';
+      heroAsset.src = 'assets/images/revuru_emblem_new.png';
     });
   }
 }
@@ -252,7 +251,6 @@ function initLanguageToggle() {
       ? '<span class="active-lang">తెలుగు</span> / <span>English</span>' 
       : '<span>తెలుగు</span> / <span class="active-lang">English</span>';
 
-    // Update all i18n data elements
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (I18N[currentLang] && I18N[currentLang][key]) {
