@@ -19,7 +19,9 @@
   --transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -713,7 +715,8 @@ body {
   margin-bottom: 0.1rem;
 }
 
-.c-item p, .c-item a {
+.c-item p,
+.c-item a {
   font-size: 0.88rem;
   color: var(--text-muted);
 }
@@ -840,26 +843,33 @@ html[lang="en"] .f-brand h4 {
     text-align: center;
     gap: 2.5rem;
   }
+
   .hero-text-col {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .hero-title-main {
     font-size: 3.5rem;
   }
+
   .hero-title-sub {
     font-size: 1.8rem;
   }
+
   .hero-buttons {
     justify-content: center;
   }
+
   .about-flex {
     grid-template-columns: 1fr;
   }
+
   .village-feature-grid {
     grid-template-columns: 1fr;
   }
+
   .contact-card-unified {
     grid-template-columns: 1fr;
     padding: 2rem;
@@ -868,34 +878,41 @@ html[lang="en"] .f-brand h4 {
 }
 
 @media (max-width: 768px) {
+
   /* Sticky Header Mobile Layout - Clean, No Overlapping or Text Clipping */
   .main-header {
     background: rgba(6, 17, 5, 0.96);
   }
+
   .nav-container {
     height: auto;
     min-height: 58px;
     padding: 0.45rem 0;
   }
+
   .brand-identity {
     gap: 0.55rem;
     min-width: 0;
     flex: 1 1 auto;
     overflow: hidden;
   }
+
   .brand-emblem-mini {
     width: 38px;
     height: 38px;
     flex-shrink: 0;
   }
+
   .mini-emblem-img {
     width: 32px;
     height: 32px;
   }
+
   .brand-text {
     min-width: 0;
     justify-content: center;
   }
+
   .brand-title {
     font-size: 1.05rem;
     white-space: nowrap;
@@ -903,19 +920,23 @@ html[lang="en"] .f-brand h4 {
     text-overflow: ellipsis;
     line-height: 1.2;
   }
+
   /* Crucial: Hide long 54-char address from sticky header on mobile to prevent 5-line wrap and overlap */
   .brand-sub {
     display: none;
   }
+
   .header-actions {
     gap: 0.4rem;
     flex-shrink: 0;
   }
+
   .lang-btn {
     padding: 0.3rem 0.6rem;
     font-size: 0.78rem;
     white-space: nowrap;
   }
+
   .btn-map-nav {
     padding: 0.32rem 0.65rem;
     font-size: 0.78rem;
@@ -926,78 +947,100 @@ html[lang="en"] .f-brand h4 {
   .hero-section {
     padding: 2.75rem 0 3.5rem 0;
   }
+
   .hero-title-main {
     font-size: 2.6rem;
     word-break: break-word;
   }
+
   .hero-title-sub {
     font-size: 1.35rem;
   }
+
   .motto-box {
     padding: 0.6rem 1rem;
     width: 100%;
     box-sizing: border-box;
   }
+
   .motto-te {
     font-size: 1.15rem;
   }
+
   .hero-desc {
     font-size: 0.95rem;
   }
+
   .hero-buttons {
     flex-direction: column;
     width: 100%;
     gap: 0.75rem;
   }
+
   .hero-buttons .btn {
     width: 100%;
     justify-content: center;
     padding: 0.75rem 1rem;
   }
+
   .stats-ribbon {
     flex-direction: column;
     gap: 0.85rem;
     width: 100%;
   }
+
   .stat-sep {
     width: 100%;
     height: 1px;
   }
+
   .emblem-card-clean {
     max-width: 320px;
   }
+
   .emblem-backdrop-glow {
     width: 280px;
     height: 280px;
   }
+
   .page-section {
     padding: 3.5rem 0;
   }
+
   .heading-title {
     font-size: 1.85rem;
   }
+
   .heading-sub {
     font-size: 0.9rem;
   }
+
   .geo-chips-row {
     justify-content: center;
   }
+
   .services-4grid {
     grid-template-columns: 1fr;
   }
+
   .contact-card-unified {
     padding: 1.75rem 1.25rem;
   }
+
   .contact-h2 {
     font-size: 1.6rem;
   }
-  .c-item p, .c-item a {
+
+  .c-item p,
+  .c-item a {
     word-break: break-word;
   }
+
   .footer-flex {
     flex-direction: column;
     text-align: center;
   }
+
   .f-brand {
     flex-direction: column;
   }
@@ -1007,45 +1050,57 @@ html[lang="en"] .f-brand h4 {
   .container {
     padding: 0 0.85rem;
   }
+
   .brand-title {
     font-size: 0.92rem;
   }
+
   .brand-identity {
     gap: 0.45rem;
   }
+
   .brand-emblem-mini {
     width: 34px;
     height: 34px;
   }
+
   .mini-emblem-img {
     width: 28px;
     height: 28px;
   }
+
   .lang-btn {
     padding: 0.26rem 0.5rem;
     font-size: 0.72rem;
   }
+
   .btn-map-nav {
     padding: 0.28rem 0.55rem;
     font-size: 0.75rem;
     min-width: 32px;
   }
+
   /* On compact mobile screens under 480px, hide map text label to give maximum space to brand */
   .btn-map-nav span[data-i18n="btnMap"] {
     display: none;
   }
+
   .hero-title-main {
     font-size: 2.2rem;
   }
+
   .hero-title-sub {
     font-size: 1.15rem;
   }
+
   .motto-te {
     font-size: 1.05rem;
   }
+
   .stat-number {
     font-size: 1.3rem;
   }
+
   .v-card {
     padding: 0.85rem;
   }
