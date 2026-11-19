@@ -283,6 +283,7 @@ body {
   font-weight: 800;
   line-height: 1.05;
   background: linear-gradient(135deg, #fff7c2 0%, var(--gold-primary) 50%, #d4951e 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
